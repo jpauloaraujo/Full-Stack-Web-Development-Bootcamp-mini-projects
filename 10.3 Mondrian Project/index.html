@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .grid-container {
+        display: grid;
+        /* grid-template-rows: 414px 314px 20px; */
+        grid-template-rows: 414px 140px 155px 20px;
+        grid-template-columns: 320px 198px 153px 50px;
+        background-color: black;
+        gap: 9px;
+        width: 748px;
+      }
+
+      .red-square {
+        background-color: #e72f24;
+      }
+
+      .white-square {
+        background-color: #f0f1ec;
+      }
+
+      .blue-square {
+        background-color: #004592;
+      }
+
+      .yellow-square {
+        background-color: #f9d01e;
+      }
+
+      .black-square {
+        background-color: #232629;
+      }
+
+      .q1 {
+        grid-column: span 3;
+      }
+
+      .q2 {
+        grid-row: span 2;
+      }
+
+      .q3 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .q4 {
+        height: 130px;
+        border-bottom: 10px solid black;
+      }
+
+      .q5 {
+        grid-row: span 2;
+      }
+
+      .q8 {
+        /* height: 175px; */
+        grid-row: -2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="grid-container">
+      <div class="red-square"></div>
+      <div class="q1 white-square"></div>
+      <div class="q2 white-square"></div>
+      <div class="q3 white-square"></div>
+      <div class="q4 blue-square"></div>
+      <div class="q5 white-square"></div>
+      <div class="q6 yellow-square"></div>
+      <div class="q7 black-square"></div>
+      <div class="q8 white-square"></div>
+    </div>
+  </body>
+</html>
